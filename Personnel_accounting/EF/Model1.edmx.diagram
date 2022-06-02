@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="af9f52cbf5d94995a1fe6bb573fcf8d3" Name="Diagram1">
+        <EntityTypeShape EntityType="Personnel_accountingModel.Bonus" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.Education" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.Employee" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.EmploymentHistory" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.INN" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.Medical" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.Military" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.Passport" Width="1.5" PointX="0.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.Platform" Width="1.5" PointX="0.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.Role" Width="1.5" PointX="0.75" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.SNILS" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Personnel_accountingModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_Education" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_EmploymentHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_INN" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_Medical" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_Military" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_Passport" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_Platform" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="Personnel_accountingModel.FK_Employee_SNILS" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

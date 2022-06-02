@@ -1,0 +1,104 @@
+﻿<Window x:Class="Personnel_accounting.Windows.EmployeeAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Personnel_accounting.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="EmployeeAdd" Height="650" Width="1050" MinHeight="650" MinWidth="1050">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="txtAddEditEmployee" Text="Добавление сотрудника" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Franklin Gothic Demi" Margin="0 10 0 0"/>
+        <TextBlock Text="Имя" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="1"/>
+        <TextBlock Text="Фамилия" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="2"/>
+        <TextBlock Text="Отчество" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="3"/>
+        <TextBlock Text="Почта" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="4"/>
+        <TextBlock Text="Телефон" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="5"/>
+        <TextBlock Text="Роль" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="6"/>
+        <TextBlock Text="Логин" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="7"/>
+        <TextBlock Text="Пароль" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="8"/>
+        <TextBlock Text="Повторите пароль" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="9"/>
+        <TextBlock Text="ИНН" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="1" Grid.Column="2"/>
+        <TextBlock Text="СНИЛС" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="2" Grid.Column="2"/>
+        <TextBlock Text="Военный билет" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="3" Grid.Column="2"/>
+        <TextBlock Text="Диплом" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="4" Grid.Column="2"/>
+        <TextBlock Text="Мед. книжка" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="5" Grid.Column="2"/>
+        <TextBlock Text="Трудовая книжка" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="6" Grid.Column="2"/>
+        <TextBlock Text="Паспорт" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="7" Grid.Column="2"/>
+        <TextBlock Text="Адрес" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="8" Grid.Column="2"/>
+        <TextBlock Text="Подразделение" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="9" Grid.Column="2"/>
+        <!--Поля для заполнения-->
+        <TextBox x:Name="txtFName" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="100" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtLName" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="100" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtMName" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="100" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtEmail" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="100" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtPhone" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="12" PreviewTextInput="txtPhone_PreviewTextInput" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cmbRole" Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8"/>
+        <TextBox x:Name="txtLogin" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="50" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtPassword" Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="50" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtINN" Grid.Column="4" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="12" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtSNILS" Grid.Column="4" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="13" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtMilitary" Grid.Column="4" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="7" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtEducation" Grid.Column="4" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="13" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtMedical" Grid.Column="4" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="7" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtHistory" Grid.Column="4" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="7" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtPasport" Grid.Column="4" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="10" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtAddres" Grid.Column="4" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8" MaxLength="150" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cmbPlatform" Grid.Column="5" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8"/>
+        <DatePicker x:Name="dpHire" Grid.Column="5" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" FontSize="16" Margin="8"/>
+        <TextBox x:Name="txtConfirmPassword" 
+                 Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" 
+                 HorizontalAlignment="Center" Width="250" FontSize="16" 
+                 Margin="8" MaxLength="50" VerticalContentAlignment="Center"/>
+        <Border
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Grid.Row="10"
+            Grid.RowSpan="3"
+            Height="75"
+            Width="250"
+            Margin="0 0 0 40"
+            CornerRadius="10"
+            Background="Gray"    
+            >
+            <Image x:Name="PhotoStaff" Source="/RES/user_default.png" />
+
+        </Border>
+        <Button x:Name="btnPhoto"
+                Grid.Row="11"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="4"
+                Grid.Column="0"
+                Height="20"
+                Width="80"
+                Margin="0 30 0 0"
+                Click="btnPhoto_Click"
+                Content="Обзор"
+                Background="{x:Null}"
+            ></Button>
+        <Button x:Name="btnAddEmployee" Grid.Row="13" Grid.ColumnSpan="4" Height="30" Width="200" Content="Добавить сотрудника" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Margin="0 0 0 20" Click="btnAddEmployee_Click"/>
+    </Grid>
+</Window>
